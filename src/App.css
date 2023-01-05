@@ -1,38 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Aside {
+  height: 90vh;
+  width: 85vw;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Sidebar {
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  margin-top: 45%;
+}
+
+nav li {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.Sidebar,
+.Reviews,
+.WebVisitors,
+.Rating,
+.Analysis {
+  background-color: #ececec;
+  padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box {
+  background-color: red;
+  height: 42vh;
+  width: 55vw;
+  margin-left: 40px;
+  margin-top: 23px;
+  background-color: rgba(119, 119, 119, 0.279);
+}
+
+.Reviews {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+.num {
+  text-align: center;
+  margin-top: 15px;
+}
+
+h5 {
+  margin: 10px;
+}
+
+.WebVisitors {
+  grid-row: 2 / 4;
+  grid-column: 2 / 5;
+  padding: 12px;
 }
